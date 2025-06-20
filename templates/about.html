@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+
+{% block body %}
+<div class="container py-5 d-flex flex-column min-vh-100">
+  <div class="row align-items-center">
+    <!-- <div class="col-md-6 mb-4">
+      <img src="https://source.unsplash.com/600x400/?notebook,code" 
+           alt="About Todo App" class="img-fluid rounded shadow">
+    </div> -->
+    <div class="col-md-6">
+      <h1 class="display-5 mb-3">About <span class="text-primary">My Todo App</span></h1>
+      <p class="lead">This is a simple Flask-based todo list app built as a beginner project to explore web development.</p>
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Add, view, and filter todos.</li>
+        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Real-time filtering powered by JavaScript & Flask.</li>
+        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Clean design using Bootstrap.</li>
+      </ul>
+      <p class="mt-4">Made with ❤️ to learn how Flask routing, templating, and database integration work.</p>
+      <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-light mt-auto py-3">
+  <div class="text-center">
+    &copy; {{ current_year }} <strong>My Todo App</strong>. Built with Flask & Bootstrap.
+  </div>
+</footer>
+{% endblock %}
